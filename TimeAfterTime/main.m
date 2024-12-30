@@ -9,8 +9,9 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        NSDate *now = [NSDate date];
+        
+        NSLog(@"This NSDate object lives at %p", now);
     }
     return 0;
 }
