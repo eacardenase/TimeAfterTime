@@ -27,6 +27,10 @@ int main(int argc, const char * argv[]) {
                                            inUnit:NSCalendarUnitMonth
                                           forDate:now];
         NSLog(@"This is day %lu of the month", day);
+        
+        NSLog(@"This is week %lu of the year", [cal ordinalityOfUnit:NSCalendarUnitWeekday
+                                                              inUnit:NSCalendarUnitMonth
+                                                             forDate:now]);
     }
     return 0;
 }
