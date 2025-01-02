@@ -31,6 +31,8 @@ int main(int argc, const char * argv[]) {
         NSLog(@"This is week %lu of the year", [cal ordinalityOfUnit:NSCalendarUnitWeekday
                                                               inUnit:NSCalendarUnitMonth
                                                              forDate:now]);
+        double secondsSince1970 = [[NSDate date] timeIntervalSince1970];
+        NSLog(@"It has been %f seconds since the start of 1970", secondsSince1970);
     }
     return 0;
 }
